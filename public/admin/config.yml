@@ -1,8 +1,7 @@
-local_backend: true
 
 backend:
-  name: git-gateway
-  branch: main # ou o branch padrão do seu repositório
+  name: github
+  repo: samunando/testeconstru
 
 media_folder: "src/assets/carrossel"
 public_folder: "/uploads"
