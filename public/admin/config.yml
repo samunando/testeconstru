@@ -1,7 +1,7 @@
-
 backend:
   name: github
   repo: samunando/testeconstru
+  branch: main
 
 media_folder: "src/assets/carrossel"
 public_folder: "/uploads"
