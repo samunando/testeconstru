@@ -1,0 +1,70 @@
+---
+import { Instagram, Phone, Mail } from "lucide-astro";
+import "../styles/global.css";
+---
+
+<section
+  style="background-image: url(uploads/gerais/fundo-contato.png);"
+  class="h-[calc(100vh-120px)] relative bg-cover bg-[center_bottom_15%] bg-no-repeat overflow-hidden flex flex-col items-center"
+  id="contato"
+>
+  <!-- Camada de fundo escura -->
+  <div class="bg-black/72 absolute inset-0">
+    <div class="gap-y-6 flex flex-col items-center px-4 md:px-0">
+      <h1
+        class="text-3xl md:text-5xl lg:text-7xl font-bold italic pt-10 md:pt-30 text-center"
+      >
+        <span class="text-[#E57B4A]">CONTATE-NOS</span>
+      </h1>
+      <p
+        class="text-lg md:text-2xl lg:text-4xl font-bold text-white tracking-wide text-center"
+      >
+        Através do Instagram, telefone e email para realizar seu orçamento.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="w-full h-auto md:h-80 absolute right-0 bottom-20 flex flex-col md:flex-row items-center md:items-end justify-center md:justify-end gap-y-6 md:gap-x-12 p-4 md:p-0"
+    data-aos="fade-right"
+    data-aos-duration="1000"
+  >
+    <div
+      class="bg-[#1E1E1E]/85 w-full md:w-[544px] h-auto md:h-full flex flex-col items-center gap-y-6 p-6"
+    >
+      <p
+        class="max-md:-ml-4 flex flex-row text-lg md:text-2xl lg:text-4xl font-bold text-[#E57B4A] gap-2 w-full"
+      >
+        <Phone size="32" md:size="42" />
+        <span class="underline">(11) 3066 - 3646</span>
+      </p>
+
+      <a
+        href="mailto:email@provedor.com.br?subject=Assunto do email&cc=copia@provedor.com.br&bcc=copiaoculta@provedor.com.br&body=Conteúdo do email que será preenchido automaticamente"
+        class="flex flex-row text-lg md:text-xl lg:text-3xl font-bold text-white gap-2 mt-6"
+      >
+        <span class="text-[#E57B4A]">
+          <Mail size="32" md:size="42" />
+        </span>
+        <span class="-tracking-wider text-lg md:text-xl lg:text-3xl">
+          construsteel.estrutura@gmail.com
+        </span>
+      </a>
+    </div>
+
+    <div
+      class="bg-[#1E1E1E]/85 order-1 w-full md:w-[524px] h-auto md:h-full flex flex-wrap justify-start p-6 md:p-12"
+    >
+      <p
+        class="flex flex-row text-lg md:text-2xl lg:text-3xl font-bold text-[#E57B4A] gap-2"
+      >
+        <Instagram size="32" md:size="42" />
+        <span class="underline">@CONSTRUSTEEL.128</span>
+      </p>
+      <p class="text-lg md:text-xl lg:text-3xl font-bold text-white mt-4">
+        Click no @ e seja direcionado ao nosso instagram para conferir alguns
+        serviços já realizados.
+      </p>
+    </div>
+  </div>
+</section>

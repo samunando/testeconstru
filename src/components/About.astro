@@ -1,0 +1,59 @@
+---
+import AosInit from "../components/AosInit.jsx";
+import "../styles/global.css";
+---
+
+<AosInit client:only="react" />
+
+<section
+  id="sobre"
+  class="md:h-screen flex flex-col md:flex-row mt-4 md:mt-0 items-center justify-center relative overflow-hidden"
+>
+  <div
+    class="z-15 w-[95%] mt-4 md:mt-0 md:w-[60%] order-2 md:order-1"
+    data-aos="fade-right"
+    data-aos-duration="1000"
+  >
+    <img
+      src="/uploads/gerais/imagem-sobre.jpg"
+      alt="Estruturas metálicas da Constru Steel"
+      class="max-xl:hidden w-full h-[400px] md:h-[600px] object-cover rounded-lg shadow-2xl border-2"
+      loading="lazy"
+    />
+    <img
+      src="/uploads/gerais/imagem-sobre4.jpg"
+      alt="Estruturas metálicas da Constru Steel"
+      class="xl:hidden w-full h-[400px] md:h-[600px] object-cover rounded-lg shadow-2xl border-2"
+      loading="lazy"
+    />
+  </div>
+
+  <div
+    class="bg-[#2B2B2B] order-1 md:order-2 flex flex-col w-[90%] md:w-[40%] h-fit md:h-120 justify-start md:justify-center items-center md:items-end pb-8 md:pb-0 md:px-12 gap-y-5 max-xl:rounded-2xl"
+    data-aos="fade-left"
+    data-aos-duration="1100"
+  >
+    <div
+      class="h-[3px] rounded-full hidden bg-[#E57B4A] w-[94%] absolute z-50 right-5 -top-[7%]"
+    >
+    </div>
+    <h1
+      class="text-[#E57B4A] font-bold text-3xl text-left md:text-[3.625rem] md:text-right max-w-[510px] max-md:w-full max-md:ml-8 mt-5 leading-tight"
+    >
+      <span class="block">SOBRE A</span>
+      <span class="block">NOSSA EMPRESA</span>
+    </h1>
+    <p
+      class="text-white text-2xl font-medium text-right md:text-right max-w-[95%] h-auto tracking-normal"
+    >
+      A Constru Steel é uma empresa do segmento de estruturas metálicas no qual
+      se desempenha a entregar qualidade e agilidade nos serviços contratados.
+      Projetamos, fabricamos e executamos construções em aço de acordo com a
+      necessidade do cliente.
+    </p>
+    <div
+      class="h-[3px] hidden rounded-full bg-[#E57B4A] w-[150%] absolute z-50 right-5 -bottom-[21%]"
+    >
+    </div>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+---
+import PortfolioComponent from "../components/PortfolioComponent";
+import "../styles/global.css";
+---
+
+<section
+  id="portfolio"
+  class="portfolio-section bg-gradient-to-b from-[#0000008c] to-[#000000] h-screen flex flex-col items-center justify-start pt-6 gap-y-[10%]"
+  data-aos="fade-in"
+  data-aos-duration="1000"
+>
+  <h2 class="text-4xl md:text-7xl font-bold text-[#E57B4A] pt-4 h-fit">
+    NOSSO PORTFÓLIO
+  </h2>
+  <PortfolioComponent client:only />
+</section>
