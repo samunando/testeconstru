@@ -1,10 +1,8 @@
 backend:
   name: auth0
-  domain: dev-ksr2itt6dm3dvbvl.us.auth0.com
-  client_id: vpFhi2cSjuKU0j58RAmcDTLKqtcaa9q5
-  audience: ev-ksr2itt6dm3dvbvl.us.auth0.com/api/v2/
-  repo: samunando/testeconstru
-  branch: main
+  domain: ${AUTH0_DOMAIN}
+  client_id: ${AUTH0_CLIENT_ID}
+  audience: ${AUTH0_AUDIENCE}
 
 media_folder: "src/assets/carrossel"
 public_folder: "/uploads"
