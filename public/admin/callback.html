@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Decap CMS</title>
     <script src="https://cdn.auth0.com/js/auth0-spa-js/1.20/auth0-spa-js.production.js"></script>
   </head>
   <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
       const auth0 = new Auth0Client({
         domain: "ev-ksr2itt6dm3dvbvl.us.auth0.com",
         client_id: "vpFhi2cSjuKU0j58RAmcDTLKqtcaa9q5",
         redirect_uri: window.location.origin + "/callback",
-        audience: "ev-ksr2itt6dm3dvbvl.us.auth0.com/api/v2/",
       });
 
-      window.CMS.init({
-        config: {
-          backend: {
-            auth0,
-          },
-        },
-      });
+      async function handleRedirect() {
+        await auth0.handleRedirectCallback();
+        window.location.replace("/admin");
+      }
+
+      handleRedirect();
     </script>
   </body>
 </html>
