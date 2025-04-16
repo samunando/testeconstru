@@ -1,18 +1,19 @@
 ---
 import { Instagram, Phone, Mail } from "lucide-astro";
-import "../styles/global.css";
 ---
 
 <section
   style="background-image: url(uploads/gerais/fundo-contato.png);"
-  class="h-[calc(100vh-120px)] relative bg-cover bg-[center_bottom_15%] bg-no-repeat overflow-hidden flex flex-col items-center"
+  class="h-[calc(100vh-120px)] relative bg-cover bg-[center_bottom_15%] bg-no-repeat overflow-hidden flex flex-col items-center max-lg:justify-center"
   id="contato"
 >
   <!-- Camada de fundo escura -->
-  <div class="bg-black/72 absolute inset-0">
-    <div class="gap-y-6 flex flex-col items-center px-4 md:px-0">
+  <div class="bg-black/72 absolute inset-0 pt-8 lg:pt-15 xl:pt-0">
+    <div
+      class="max-[380px]:gap-6 gap-11 h-[40%] flex flex-col items-center px-4 md:px-0 max-[380px]:h-[30%] max-[380px]:justify-center"
+    >
       <h1
-        class="text-3xl md:text-5xl lg:text-7xl font-bold italic pt-10 md:pt-30 text-center"
+        class="text-3xl md:text-5xl lg:text-7xl font-bold italic max-[380px]:pt-2 max-[1610px]:pt-10 lg:pt-30 xl:pt-20 text-center"
       >
         <span class="text-[#E57B4A]">CONTATE-NOS</span>
       </h1>
@@ -25,15 +26,15 @@ import "../styles/global.css";
   </div>
 
   <div
-    class="w-full h-auto md:h-80 absolute right-0 bottom-20 flex flex-col md:flex-row items-center md:items-end justify-center md:justify-end gap-y-6 md:gap-x-12 p-4 md:p-0"
+    class="w-full max-[380px]:h-[30%] mt-59 h-auto md:h-80 absolute xl:right-10 max-[380px]:bottom-5 bottom-25 max-[1610px]:bottom-10 lg:bottom-35 xl:bottom-10 flex flex-col xl:flex-row items-center xl:items-end md:items-center md:gap-y-15 md:h-[60%] lg:h-80 md:mt-70 justify-center md:justify-end gap-y-6 md:gap-x-12 p-4 md:p-0 max-lg:relative max-lg:justify-center"
     data-aos="fade-right"
     data-aos-duration="1000"
   >
     <div
-      class="bg-[#1E1E1E]/85 w-full md:w-[544px] h-auto md:h-full flex flex-col items-center gap-y-6 p-6"
+      class="bg-[#1E1E1E]/85 w-full md:w-[544px] h-[80%] md:h-full flex flex-col items-center justify-evenly max-[380px]:justify-center max-[380px]:gap-y-1 gap-y-6 p-6"
     >
       <p
-        class="max-md:-ml-4 flex flex-row text-lg md:text-2xl lg:text-4xl font-bold text-[#E57B4A] gap-2 w-full"
+        class="flex flex-row text-lg md:text-2xl lg:text-4xl font-bold text-[#E57B4A] gap-2 w-full"
       >
         <Phone size="32" md:size="42" />
         <span class="underline">(11) 3066 - 3646</span>
@@ -41,12 +42,14 @@ import "../styles/global.css";
 
       <a
         href="mailto:email@provedor.com.br?subject=Assunto do email&cc=copia@provedor.com.br&bcc=copiaoculta@provedor.com.br&body=Conteúdo do email que será preenchido automaticamente"
-        class="flex flex-row text-lg md:text-xl lg:text-3xl font-bold text-white gap-2 mt-6"
+        class="flex w-full flex-row text-lg md:text-xl lg:text-3xl font-bold text-white gap-2 mt-6"
       >
         <span class="text-[#E57B4A]">
           <Mail size="32" md:size="42" />
         </span>
-        <span class="-tracking-wider text-lg md:text-xl lg:text-3xl">
+        <span
+          class="-tracking-wider max-[362px]:text-[13px] max-[380px]:mt-1 sm:text-lg md:text-xl lg:text-3xl"
+        >
           construsteel.estrutura@gmail.com
         </span>
       </a>
