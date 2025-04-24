@@ -5,7 +5,7 @@ import "../styles/global.css";
 
 const AosInit = () => {
   useEffect(() => {
-    AOS.init({ once: false });
+    AOS.init({ once: true });
   }, []);
 
   return null;
